@@ -1,8 +1,16 @@
-.header {
+@font-face {
+    font-family: 'IvyPresto Display';
+    src: url('https://shred686.github.io/influxpjt/ivy-presto-text.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
     padding: 20px;
     text-align: center;
-    width: 1000px;
+    width: 1200px;
     margin: auto;
+    overflow: hidden;
 }
 
 p {
@@ -15,7 +23,7 @@ p {
     text-decoration-skip-ink: none;
     text-shadow: 0px 4px 4px #00000040;
     margin: 20px auto;
-    width: 800px;
+    max-width: 800px;
 }
 
 h2 {
@@ -44,4 +52,113 @@ h3 {
     text-decoration-skip-ink: none;
     text-shadow: 0px 4px 4px #00000040;
     margin: 10px 0;
+}
+
+.tabs-labels {
+    margin: 40px auto 40px;
+    display: flex;
+    justify-content:space-between;
+    max-width:1200px;
+    z-index: 1;
+    position: relative;
+}
+
+.tabs-label {
+    font-family: Poppins;
+font-size: 22px;
+font-weight: 300;
+line-height: 36px;
+letter-spacing: -0.02em;
+text-align: right;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+
+.tabs-label-selected {
+    
+    color: #D3A79D;
+    text-shadow: 0px 4px 4px #00000040;
+    -webkit-text-stroke: .75px #D3A79D;
+}
+
+.tabs, .tabs-body, .tabs-content {
+    position: relative;
+}
+.tabs {
+    padding: 0;
+    width: 100%;
+}
+.tabs-body {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 800px; */
+}
+.tabs-content {
+    padding: 20px 40px 40px;
+    z-index: 1;
+    width: 525px;
+ 
+    margin: 80px 0 40px 40px;
+    background-image: url(https://s3-alpha-sig.figma.com/img/10cc/33b5/955beb7d5d6919de96d831467436d1e6?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AmtXs~O0ZKYflBK5ssSrB21Qh0LDvZtTps0nsBAjXC5yCENGbXXDXkZcVMvjK2xQrnHq6j-yxJUOM5LCEqZFGYOFz9YjmXJpP4VZwgJrsjy2MrkddcmNTqGV-ONiF8XCeW3qKS3k5sdhcKifvxRHc3MTSDSXg2yn1Z7wqnqczCfbqqYmuBxWYCBj49Q0lrYkH~BPP6cwsFWvrgAVx7D9wvPB1XM29oDjvCGBS9M1MJGSSn86gcpqaq38aFBKZiXjqBN1rPzExn3HcXW8juVmoLcKrS7w4m74hcrke-Pcao955CnjapYTZHcfr7nGuOVJpP1P8cdApXbeXgHVtTO1gg__);
+
+}
+.tabs-content h2 {
+   font-size: 55px;
+   text-align: left;
+}
+
+.tabs-content .button {
+    text-align: left;
+}
+
+.tabs-content a, .tabs-label {
+    font-family: 'IvyPresto Display';
+    position: relative;
+}
+.tabs-content a {
+    background-color: #FBE0DA;
+    padding: 15px 37px 15px 20px;
+}
+
+.tabs-content a::after, .tabs-label::after {
+    content: '';
+    display: block;
+    background-image: url(arrow.svg);
+    width: 17px;
+    height: 10px;
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-15px,-25%);
+    filter: grayscale(100) brightness(0);
+}
+.tabs-label::after {
+transform: translate(calc(100% + 5px),0);
+}
+.selected {
+    color: #FBE0DA;
+}
+.selected::After {
+   transform: translate(calc(100% + 5px),0) rotate(90deg);
+   filter: none;
+}
+
+picture.background {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    height: 100%;
+    display: flex;
+}
+img {
+    object-fit: cover;
 }
