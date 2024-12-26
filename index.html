@@ -1,31 +1,82 @@
-<link href="styles.css" rel="stylesheet" />
-<div class="container">
-    <h2>Advanced aesthetics.</h2>
-    <h3>REJUVENATION MEDICAL AESTHETICS</h3>
-    <p>Rejuvenation Medical Aesthetics is a hidden gem in Newtown, PA. Whether you reside in Bucks County or commute from Philadelphia, Pennsylvania, or New Jersey, our dedicated team offers the highest degree of care and friendly personal service to make you comfortable during your treatments. Allow yourself to be pampered today.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Code Test</title>
 
-<div class="container tabs">
+        <link href="styles.css" rel="stylesheet" />
+    </head>
 
-    <div class="tabs-labels">
-        <a class="tabs-label selected">Dermal Fillers</a>
-        <a class="tabs-label">CoolSculpting Elite</a>
-        <a class="tabs-label">QWO</a>
-        <a class="tabs-label">Advanced Lasers</a>
-        <a class="tabs-label">Microneedling</a>
-    </div>
+    <body>
 
-    <div class="tabs-body">
-        <div class="tabs-content">
-            <h2>Dermal Fillers</h2>
-            <p>
-                Facial volume loss begins in most people once they hit their mid-30s. Don’t let the loss of youthful volume dictate your appearance! Take action with our collection of Dermal Fillers, such as Restylane ® and Juvederm®. Our dermal fillers are FDA-approved to lift and add volume to wrinkles, fine lines, or enhance your lips. Experience smoother, younger-looking skin today!
-            </p>
-            <div class="button"><a>Dermal Fillers</a></div>
+        <div class="container">
+            <h2>Advanced aesthetics.</h2>
+            <h3>REJUVENATION MEDICAL AESTHETICS</h3>
+            <p>Rejuvenation Medical Aesthetics is a hidden gem in Newtown, PA. Whether you reside in Bucks County or commute from Philadelphia, Pennsylvania, or New Jersey, our dedicated team offers the highest degree of care and friendly personal service to make you comfortable during your treatments. Allow yourself to be pampered today.</p>
         </div>
-        <picture class="background">
-            <img src="bg.jpg" width="2200" >
-        </picture>
-    </div>
 
-</div>
+        <div class="container tabs">
+
+            <div class="tabs-labels">
+                <a class="tabs-label selected" id="label-fillers">Dermal Fillers</a>
+                <a class="tabs-label" id="label-coolsculpt">CoolSculpting Elite</a>
+                <a class="tabs-label" id="label-qwo">QWO</a>
+                <a class="tabs-label" id="label-lasers">Advanced Lasers</a>
+                <a class="tabs-label" id="label-microneedle">Microneedling</a>
+            </div>
+
+            <div class="tabs-body">
+
+                <div class="tabs-content visible" id="tab-content-fillers">
+                    <h2>Dermal Fillers</h2>
+                    <p>
+                        Facial volume loss begins in most people once they hit their mid-30s. Don’t let the loss of youthful volume dictate your appearance! Take action with our collection of Dermal Fillers, such as Restylane ® and Juvederm®. Our dermal fillers are FDA-approved to lift and add volume to wrinkles, fine lines, or enhance your lips. Experience smoother, younger-looking skin today!
+                    </p>
+                    <div class="button"><a>Dermal Fillers</a></div>
+                </div>
+
+                <div class="tabs-content notvisible" id="tab-content-coolsculpt">
+                    <h2>CoolSculpting Elite</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                    </p>
+                    <div class="button"><a>CoolSculpting Elite</a></div>
+                </div>
+
+                <div class="tabs-content notvisible" id="tab-content-qwo">
+                    <h2>QWO</h2>
+                    <p>
+                        Lorem ipsum odor amet, consectetuer adipiscing elit. Maximus ornare molestie lacus aenean aliquet class. Blandit faucibus mi lobortis torquent ut, dis parturient. Gravida curae nec integer dictum auctor suspendisse mi fames. Pretium rutrum vitae lobortis; dictumst orci enim. Pretium dolor fusce vestibulum malesuada maximus pretium lacus sed penatibus.
+                    </p>
+                    <div class="button"><a>QWO</a></div>
+                </div>
+
+                <div class="tabs-content notvisible" id="tab-content-lasers">
+                    <h2>Advanced Lasers</h2>
+                    <p>
+                        Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla quis diam tempus tincidunt vulputate tincidunt; aliquet lacus. Ipsum hac lacus finibus torquent rutrum integer. Neque litora mi leo venenatis nibh dolor, suspendisse hac. Elementum elementum amet dictum et ante odio laoreet. Nullam sem tempor penatibus primis accumsan eu adipiscing erat. Diam odio ridiculus primis maecenas etiam, dolor est.
+                    </p>
+                    <div class="button"><a>Advanced Lasers</a></div>
+                </div>
+
+                <div class="tabs-content notvisible" id="tab-content-microneedle">
+                    <h2>Microneedling</h2>
+                    <p>
+                        Lorem ipsum odor amet, consectetuer adipiscing elit. Proin sed lorem amet luctus diam. Lorem vitae cursus euismod risus etiam aliquet urna. Mattis consequat habitant et sodales ex. Potenti mauris fringilla platea; habitant nostra maximus. Morbi efficitur felis placerat metus enim in. Justo nisl duis rutrum pharetra; platea condimentum. Arutrum tristique venenatis, pharetra mauris habitant adipiscing.
+                    </p>
+                    <div class="button"><a>Microneedling</a></div>
+                </div>
+
+                <picture class="background">
+                    <img src="bg.jpg" width="2200" >
+                </picture>
+            </div>
+
+        </div>
+
+        <script src="scripts.js"></script>
+        
+    </body>
+</html>

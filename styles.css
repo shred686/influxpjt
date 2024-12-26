@@ -55,7 +55,7 @@ h3 {
 }
 
 .tabs-labels {
-    margin: 40px auto 40px;
+    margin: 40px auto 60px;
     display: flex;
     justify-content:space-between;
     max-width:1200px;
@@ -74,6 +74,7 @@ text-decoration-line: underline;
 text-decoration-style: solid;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
+cursor: pointer;
 }
 
 .tabs-label-selected {
@@ -98,21 +99,35 @@ text-decoration-skip-ink: none;
     /* height: 800px; */
 }
 .tabs-content {
-    padding: 20px 40px 40px;
+    padding: 0px 70px 50px;
     z-index: 1;
-    width: 525px;
- 
-    margin: 80px 0 40px 40px;
-    background-image: url(https://s3-alpha-sig.figma.com/img/10cc/33b5/955beb7d5d6919de96d831467436d1e6?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AmtXs~O0ZKYflBK5ssSrB21Qh0LDvZtTps0nsBAjXC5yCENGbXXDXkZcVMvjK2xQrnHq6j-yxJUOM5LCEqZFGYOFz9YjmXJpP4VZwgJrsjy2MrkddcmNTqGV-ONiF8XCeW3qKS3k5sdhcKifvxRHc3MTSDSXg2yn1Z7wqnqczCfbqqYmuBxWYCBj49Q0lrYkH~BPP6cwsFWvrgAVx7D9wvPB1XM29oDjvCGBS9M1MJGSSn86gcpqaq38aFBKZiXjqBN1rPzExn3HcXW8juVmoLcKrS7w4m74hcrke-Pcao955CnjapYTZHcfr7nGuOVJpP1P8cdApXbeXgHVtTO1gg__);
+    width: 430px;
+    overflow: hidden;
+    margin: 100px 0 100px 80px;
+    position: relative;
 
 }
+.tabs-content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(text-bg.jpg) 0 0 no-repeat;
+    transform: rotate(0);
+    background-size: cover;
+    z-index: -1;
+}
 .tabs-content h2 {
-   font-size: 55px;
+   font-size: 46px;
    text-align: left;
+   text-shadow: none;
 }
 
 .tabs-content .button {
     text-align: left;
+    margin-top: 40px;
 }
 
 .tabs-content a, .tabs-label {
@@ -122,6 +137,11 @@ text-decoration-skip-ink: none;
 .tabs-content a {
     background-color: #FBE0DA;
     padding: 15px 37px 15px 20px;
+}
+.tabs-content p {
+    text-shadow: none;
+    text-decoration: underline;
+    margin: 0;
 }
 
 .tabs-content a::after, .tabs-label::after {
@@ -142,7 +162,8 @@ text-decoration-skip-ink: none;
 transform: translate(calc(100% + 5px),0);
 }
 .selected {
-    color: #FBE0DA;
+    color: #D3A79D;
+    text-shadow: 0px 4px 4px #00000040;
 }
 .selected::After {
    transform: translate(calc(100% + 5px),0) rotate(90deg);
@@ -161,4 +182,11 @@ picture.background {
 }
 img {
     object-fit: cover;
+}
+
+.visible {
+    display: block;
+}
+.notvisible {
+    display: none;
 }
